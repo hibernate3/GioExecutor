@@ -21,6 +21,6 @@ object LpShareHiveExecutor {
 
     //将结果写入到Mysql
     val dbUtil = new DBUtil()
-    dbUtil.writeToMysql("10.71.80.233", 3306, "bigdata_result", "bigdata", "5vf0sX=Uaqhc", "lp_recommend_result", recResult, 0)
+    dbUtil.writeToMysql("10.101.40.216", 3306, "bigdata_result", "hdb_user", "hdb123456", "lp_recommend_result", recResult, 0)
   }
 }

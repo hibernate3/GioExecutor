@@ -62,14 +62,8 @@
     <name>hadoop.proxyuser.hive.groups</name>
     <value>*</value>
   </property>
-  <property>
-    <name>hadoop.proxyuser.hue.hosts</name>
-    <value>*</value>
-  </property>
-  <property>
-    <name>hadoop.proxyuser.hue.groups</name>
-    <value>*</value>
-  </property>
+  <!--'hadoop.proxyuser.hue.hosts', originally set to '*' (non-final), is overridden below by a safety valve-->
+  <!--'hadoop.proxyuser.hue.groups', originally set to '*' (non-final), is overridden below by a safety valve-->
   <property>
     <name>hadoop.proxyuser.httpfs.hosts</name>
     <value>*</value>
@@ -133,5 +127,29 @@
     <name>hadoop.ssl.client.conf</name>
     <value>ssl-client.xml</value>
     <final>true</final>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.admin.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.admin.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hue.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hue.groups</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hbase.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hbase.groups</name>
+    <value>*</value>
   </property>
 </configuration>
